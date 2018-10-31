@@ -10,7 +10,7 @@ public class TestUpdate {
 		
 		String id = UUID.randomUUID() + "";
 		DataBaseUtils.update("INSERT INTO t_user(id,username,password,integral) "
-		        + "VALUES (?, ?, ?, ?)", id,"张三",123456,0);
+		        + "VALUES (?, ?, ?, ?)", id,"李四",123456,0);
 	}
 
 }

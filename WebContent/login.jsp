@@ -14,18 +14,20 @@
 %>
 <html>
 <script src="${basePath}/static/js/jQuery.js"></script>
+
 <script>
 	function login(){
 		var username = $('#username').val();
 		var password = $('#password').val();
 	    $.ajax({
 	        type:"post",//请求方式
+
 	        url:"${basePath}/controller/loginController.jsp",//请求地址
 	        data:{"username":username,"password":password},//传递给controller的json数据
 	        error:function(){
-	            alert("登陆出错！");
+	            alert("登录出错");
 	        },
-	        success:function(data){ //返回成功执行回调函数。
+	        success:function(data){//返回成功执行回调函数。
 	        	if(data == -1){
                     alert('用户名和密码不能为空！');
                 }else if(data == -2){
@@ -37,6 +39,7 @@
                     window.location.href = "${basePath}/index.jsp"; 
                 }
 	        }
+
 	    });
 	}
 </script>
@@ -59,7 +62,7 @@
    }
 
    body{
-    background-image: url("back.jpg");
+    background-image: url("dai.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -100,12 +103,12 @@
   </style>
  </head>
  	<body>
- 		<h1 id="logo1">Froeasy.service</h1>
- 		<h2 id="logo2">售后服务系统</h2>
+ 		<h1 id="logo1">Welcome To Kiba Family</h1>
+ 		<h2 id="logo2">Kiba Family</h2>
  		<div style="margin:0 auto;width:200px;">
-			<p id="msty1">用户名：<input type="text" id="username" autofocus="autofocus" 
+			<p id="msty1">用户名：<input type="text" id="username" autofocus 
 			autocomplete="off" maxlength="60" placeholder="请输入账号/邮箱/手机号"></p>
-			<p id="msty1">密码：<input type="password" id="password" autofocus="autofocus" 
+			<p id="msty1">密码：<input type="password" id="password" autofocus 
 			autocomplete="off" maxlength="60" placeholder="请输入密码"></p></div>
 			<p id="msty1"><button class="login_btn" onclick="login()">登录</button></p>
 	</body>

@@ -5,9 +5,10 @@ import util.DataBaseUtils;
 
 public class LoginService {
 	public User getUser(String username) {
+		System.out.println("ser"+ username);
 		String sql = "select * from t_user where username = ?";
 		User user = DataBaseUtils.queryForBean(sql, User.class, username);
-		System.out.println(user);
+		
 		if(user == null) {
 			return null;
 		}

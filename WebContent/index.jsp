@@ -120,9 +120,9 @@ a {
 
 </script>
 <c:choose>
-<c:when  test="${empty sessionScope.username}">
+  <c:when  test="${empty sessionScope.username}">
 	<div class="header">
-    	<div class="logo">任务管理系统</div>
+    	<div class="logo">Kiba官方网站</div>
 		<div class='login'>
 
             		<span><a href="login.jsp">登陆</a></span>  
@@ -133,7 +133,7 @@ a {
 </c:when>
 <c:otherwise>
      <div class="header">
-    	<div class="logo">任务管理系统</div>
+    	<div class="logo">Kiba官方网站</div>
 		<div class='login'>
             		<span><a href="javascript:void(0)">欢迎，${sessionScope.username}</a></span>  
             		<span> | </span>
@@ -141,9 +141,10 @@ a {
 		</div>
 	</div>
 	
-	<p><a href = '${basePath}/work.jsp'><button type="button" class="button blue" name='new'>新增事件</button></a></p>
-	<br><button type="button" class="button blue" name='search' onclick="search()">查询事件</button>
-</c:otherwise>
+	<p><a href = '${basePath}/work.jsp'><button type="button" class="button blue" name='new'>新增留言</button>
+	</a><a href = '${basePath}/work.jsp'><img src="hu.jpg" width="211" height="214"></a><a href = '${basePath}/work.jsp'>	</a></p>
+	<br><button type="button" class="button blue" name='search' onclick="search()">查询留言</button>
+  <img src="kun.jpg" width="206" height="205"></c:otherwise>
 </c:choose>
 	
 </body>

@@ -121,7 +121,7 @@ body {
 </style>
 </head>
 <body>
-	<p id="mysty2">Welcome to Froeasy.service!</p>
+	<p id="mysty2">Welcome to KIBA!</p>
 	<div>
 		<p id="mysty3">Please Check!</p>
 	</div>
@@ -130,15 +130,16 @@ body {
 		<p>
 			用 户：
 			${sessionScope.username}</p>
-		<p>
+<!--		<p>
 			方 式：
 				<select id="type">
 				<option value="现场">现 场</option>
 				<option value="远程">远 程</option>
 				</select>
 		</p>
-		<p id="msty1">医院：<input type="text" id="username" autofocus="autofocus" 
-			autocomplete="off" maxlength="60" placeholder="请填写医院全名"></p>
+        -->
+		<p id="msty1">地点：<input type="text" id="username" autofocus 
+			autocomplete="off" maxlength="60" placeholder="请填写地点全名"></p>
 <!-- 		<p> -->
 <!-- 			医 院： <select id="hospital"> -->
 <!-- 				<option value="常州第一人民医院">常州第一人民医院</option> -->
@@ -159,11 +160,12 @@ body {
 		<p>
 			开始时间：<input id="starttime" type="datetime-local">
 		</p>
-		<p>
+<!--		<p>
 			结束时间：<input id="endtime" type="datetime-local">
 		</p>
+        -->
 		<p>
-			事件详情：<input id="content" type="text"
+			留言详情：<input id="content" type="text"
 				style="width: 500px; height: 20px;">
 		</p>
 		<p>

@@ -44,7 +44,7 @@ public class DataBaseUtils {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+ dataBaseName + "?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8",username,password);
+			connection = DriverManager.getConnection("jdbc:mysql://101.132.152.120:3306/"+ dataBaseName + "?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8",username,password);
 			
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();
