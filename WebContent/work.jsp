@@ -140,22 +140,7 @@ body {
         -->
 		<p id="msty1">地点：<input type="text" id="username" autofocus 
 			autocomplete="off" maxlength="60" placeholder="请填写地点全名"></p>
-<!-- 		<p> -->
-<!-- 			医 院： <select id="hospital"> -->
-<!-- 				<option value="常州第一人民医院">常州第一人民医院</option> -->
-<!-- 				<option value="无锡市妇幼保健院">无锡市妇幼保健院</option> -->
-<!-- 				<option value="丹徒区人民医院">丹徒区人民医院</option> -->
-<!-- 				<option value="盐城市第三人民医院-南院">盐城市第三人民医院-南院</option> -->
-<!-- 				<option value="南京市第一医院">南京市第一医院</option> -->
-<!-- 				<option value="涟水县人民医院">涟水县人民医院</option> -->
-<!-- 				<option value="兴化市人民医院">兴化市人民医院</option> -->
-<!-- 				<option value="溧阳市中医院">溧阳市中医院</option> -->
-<!-- 				<option value="江苏省中西医结合医院">江苏省中西医结合医院</option> -->
-<!-- 				<option value="连南瑶族自治县人民医院">连南瑶族自治县人民医院</option> -->
-<!-- 				<option value="南京市玄武医院">南京市玄武医院</option> -->
-<!-- 				<option value="靖江市中医院">靖江市中医院</option> -->
-<!-- 			</select> -->
-<!-- 		</p> -->
+
 
 		<p>
 			开始时间：<input id="starttime" type="datetime-local">
